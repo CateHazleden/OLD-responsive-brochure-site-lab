@@ -8,4 +8,3 @@
 
 Background - rgba(110, 160, 148, 0.2)
 
-<meta name="viewport" content="width=device-width,initial-scale=1">
