@@ -1,0 +1,132 @@
+@font-face {
+    font-family:'PoppinsEL', sans-serif;
+    src: url(fonts/Poppins-ExtraLight.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'PoppinsL', sans-serif;
+    src: url(fonts/Poppins-Light.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'PoppinsM', sans-serif;
+    src: url(fonts/Poppins-Medium.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.span1, .span2, .span3, .span4, .span5 {
+    display: block;
+    float: left;
+    margin: 0 15px;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #ffffff;
+    min-width: 996px; 
+}
+
+
+body {
+    line-height: 21px;
+    font-size: 14px;
+    color: #d10909;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color:blueviolet;
+    margin: 0 0 13px 0;
+    font-family:"PoppinsL", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+li {
+    text-align: center;
+}
+  
+.wrapper {
+    width: 996px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: auto;
+}
+
+header.primary {
+    height: 135px;
+    margin-top: 20px;
+    display: block;
+    z-index: 1000;
+}
+
+header.primary #tag {
+    text-align: center;
+    margin-top: 35px;
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+    left: 10px;
+}
+
+.span1 {
+    width: 219px;
+}
+
+li.search-field{
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    font-size: 11px;
+    list-style-type: none;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+.search_box {
+    border: none;
+    box-shadow: none;
+    color: #000;
+    line-height: 14px!important;
+    font-size: 12px!important;
+    width: 130px;
+    border-bottom: #000 1px solid;
+    padding-bottom: 2px;
+    text-transform: uppercase!important;
+    padding-top: 4px;
+    font-family: Helvetica,serif!important;
+    letter-spacing: 2px!important;
+    text-align: center;
+}
+
+.span2 {
+    width: 468px;
+}
+
+h1 {
+    font-size: 45px;
+    font-variant: small-caps ;
+    max-width: 350px;
+    height: 93px;
+    display: block;
+    margin: 43px auto;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+header.primary #logo {
+    height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 28px;
+}
