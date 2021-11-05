@@ -13,20 +13,40 @@
     
     <!--title-->
     <title>Cate Hazleden - Artisan - Maker</title>
+
+     <!--styles-->
+     <style>
+        * {
+            font-family: "Poppins", sans-serif;
+         }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: #3195b7
+        }
+
+        .flex-container > img {
+            width: 18%;
+            margin: 10px;
+            border-weight: 5px;
+            border-radius: 30px;
+        }
+    </style>
     
     <!--links-->
         <!--fonts-->
-    <link rel="PoppinsEL" href="fonts/Poppins-ExtraLight.ttf">
-    <link rel="PoppinsL" href="fonts/Poppins-Light.ttf">
-    <link rel="PoppinsM" href="fonts/Poppins-Medium.ttf">
-
-        <!--stylesheet-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" >
+      
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-    <!--wrapper-->
+     <!--wrapper-->
+<!--header-->
     <div class="wrapper">
         <header class="primary">
             <div>
@@ -46,10 +66,48 @@
             </div>
         </header>
     </div>
-<!--header-->
 
     <!--wrapper-->
+<!--navbar-->
+<section id="nav">
+    <div class="bg-nav-wrapper">
+
+    </div>   
+        <div class="wrapper">
+            <div class="span3">
+                <ul class="clearfix-wrapper">
+                    <li id="Jewellery" class="dropdown">Jewellery</li>
+                        <!--dropdown w second list rings necklace brooch etc img-->                    
+                    <li id="Objects" class="dropdown">Objects</li>
+                        <!--dropdown imgs-->  
+                    <li id="Ceramics" class="dropdown"> Ceramics</li>
+                        <!--dropdown w second list sculptural functional w third list of type-->  
+                    <li id="Stockists" class="dropdown">Stockists</li>
+                        <!--dropdown href to stores-->  
+                    <li id="About" class="dropdown">About</li>
+                        <!--dropdown blurb include socials-->  
+                </ul>
+            </div>
+        </div>
+    </div> 
+</section>
+    <!--wrapper-->
 <!--main-->
+<div class="photogrid-container">
+    <div class="wrapper">
+        <div id="photogrid">
+            <div class="flex-container">
+                <img id="claw-gif" src="images/animated_claw_herkimer.gif">
+                <img id="corona-rings" src="images/Corona-I_V.jpg">
+                <img id="praying-for-rain" src="images/praying-for-rain.jpg">
+                <img id="more-rain" src="images/more-rain.jpg">
+                <img id="asteroid" src="images/Asteroid-Earrings.png">
+            </div>
+           
+        </div>
+    </div>
+
+</div>
 
     <!--wrapper-->  
 <!--grid container-->

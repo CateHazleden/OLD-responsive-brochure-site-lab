@@ -1,55 +1,38 @@
-@font-face {
-    font-family:'PoppinsEL', sans-serif;
-    src: url(fonts/Poppins-ExtraLight.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family:'PoppinsL', sans-serif;
-    src: url(fonts/Poppins-Light.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family:'PoppinsM', sans-serif;
-    src: url(fonts/Poppins-Medium.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-
 .span1, .span2, .span3, .span4, .span5 {
     display: block;
     float: left;
     margin: 0 15px;
 }
+
 html, body {
     margin: 0;
     padding: 0;
     border: 0;
     background-color: #ffffff;
     min-width: 996px; 
+    font-weight: 300;
 }
-
 
 body {
     line-height: 21px;
     font-size: 14px;
     color: #d10909;
-    font-family: Helvetica, Arial, sans-serif;
     width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color:blueviolet;
     margin: 0 0 13px 0;
-    font-family:"PoppinsL", Arial, Helvetica, sans-serif;
     font-weight: normal;
 }
 
+ul {
+    margin: 0 0 20px 20px;
+    padding: 0;
+}
+
 li {
-    text-align: center;
+    text-align:center;
 }
   
 .wrapper {
@@ -64,6 +47,7 @@ header.primary {
     margin-top: 20px;
     display: block;
     z-index: 1000;
+    position: sticky;
 }
 
 header.primary #tag {
@@ -103,8 +87,7 @@ form {
     border-bottom: #000 1px solid;
     padding-bottom: 2px;
     text-transform: uppercase!important;
-    padding-top: 4px;
-    font-family: Helvetica,serif!important;
+    padding-top: 4px;  
     letter-spacing: 2px!important;
     text-align: center;
 }
@@ -115,13 +98,13 @@ form {
 
 h1 {
     font-size: 45px;
-    font-variant: small-caps ;
     max-width: 350px;
     height: 93px;
     display: block;
     margin: 43px auto;
     margin-bottom: 0;
     text-align: center;
+    letter-spacing: 1px!important;
 }
 
 header.primary #logo {
@@ -130,3 +113,47 @@ header.primary #logo {
     text-transform: uppercase;
     margin-top: 28px;
 }
+
+#nav {
+    min-width: 996px;
+    height: 50px;
+    border-bottom: 1px #fff solid;
+    letter-spacing: 2px;
+    background-color: #b8a178;
+}
+
+.bg-nav-wrapper::before {
+    display: block;
+    height: 20px;  
+}
+.span3 {
+    width: 966px;
+    overflow-x: hidden;
+}
+
+.clearfix-wrapper {
+    width: 996px;
+    margin: 0;
+    overflow: auto;
+    text-align: center;
+    padding-top: 15px; 
+}
+
+ul.clearfix-wrapper {
+    margin: 0;
+    list-style: none outside none;
+}
+
+#nav li {
+    width: 130px; 
+}
+
+#nav ul li {
+    float: none!important;
+    display: inline-block!important;
+}
+
+#photogrid {
+    margin-top: 50px;
+}
+
