@@ -31,11 +31,28 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 15px;
 }
 
+input {
+    height: 24px;
+    font-size: 100%;
+    margin: 0;
+    vertical-align: top;
+    line-height: normal;
+    padding: 4px;
+    display: inline-block;
+    border-radius: 1px;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+/*FLEXBOXES*/
+
 .flex-container-1 {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    background-color: rgba(248, 237, 223, 0.993);
+    background-color: #6ea094;
     border-radius: 30px;
     justify-content: space-evenly;
     align-items: top;
@@ -52,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    background-color: rgba(248, 237, 223, 0.993);
+    background-color: #6ea094;
     border-radius: 30px;
     justify-content: space-evenly;
     align-items: top;
@@ -69,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    background-color: rgba(248, 237, 223, 0.993);
+    background-color: #6ea094;
     border-radius: 30px;
     justify-content: space-evenly;
     align-items: top;
@@ -95,6 +112,8 @@ li {
   
 /*PAGE CONTENT*/
 
+/*HEADER*/
+
 .wrapper {
     width: 996px;
     margin: 0 auto;
@@ -109,10 +128,18 @@ header.primary {
     z-index: 1000;
     }
 
-#tag #top{
+header.primary #tag {
+    text-align: center;
+    color: #d45333;
+    text-transform: uppercase;
+    position: relative;
+    left: 10px; 
+}
+
+ul#top{
     text-align: center;
     margin-top: 35px;
-    color: black;
+    color: #d45333;
     text-transform: uppercase;
     position: relative;
     left: 10px;
@@ -153,17 +180,21 @@ input.search_box {
 
 .span2 {
     width: 468px;
+    /*place logo behind h1 in another div     background-image: url(images/Email-hallmark.jpg);
+    background-repeat: no-repeat;
+    background-position: center; */
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 44px;
+    font-weight: 200;
     max-width: 350px;
     height: 93px;
     display: block;
     margin: 43px auto;
     margin-bottom: 0;
     text-align: center;
-    letter-spacing: 1px!important;
+    letter-spacing: 2px!important;
 }
 
 header.primary #logo {
@@ -172,6 +203,15 @@ header.primary #logo {
     margin-top: 14px;
 }
 
+/*NAVBAR*/
+    
+#nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /*this stops navbar cutting through filtered images*/
+}
 #nav {
     min-width: 996px;
     height: 50px;
@@ -218,6 +258,7 @@ ul.clearfix-wrapper {
 }
 
 /*IMAGES*/
+
 #logo {
     min-height: 55px;
 }
@@ -246,7 +287,7 @@ ul.clearfix-wrapper {
     filter: brightness(1.15);
 }
 #ceramics-1 {
-    filter: grayscale(90%) ;
+    filter: grayscale(90%);
 }
 #ceramics-2 {
     filter: grayscale(90%);
