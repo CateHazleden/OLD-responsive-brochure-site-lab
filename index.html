@@ -16,24 +16,12 @@
 
      <!--styles-->
      <style>
-        * {
-            font-family: "Poppins", sans-serif;
-         }
+      * {
+        font-family: "Poppins", sans-serif;
+     }
+     </style>
 
-        .flex-container {
-            display: flex;
-            flex-wrap: nowrap;
-            background-color: rgba(248, 237, 223, 0.993);
-            border-radius: 30px;
-        }
-
-        .flex-container > img {
-            width: 18%;
-            margin: 7px;
-            border-radius: 30px; 
-            flex: 1; 
-        }
-    </style>
+    
     
     <!--links-->
         <!--fonts-->
@@ -52,69 +40,101 @@
         <header class="primary">
             <div>
                 <div id="tag" class="span1">
-                    <li class="search-field">
-                        <form class="search">
-                            <input type="text" name="q" class="search_box" placeholder="SEARCH" value="">
-                        </form> 
-                    </li>
+                    <ul id="top">
+                        <li class="search-field">
+                            <form class="search">
+                                <input type="text" name="q" class="search_box" placeholder="SEARCH" value="">
+                            </form> 
+                        </li>
+                    </ul>
                 </div>
+
                 <div class="span2">
                     <h1>Cate Hazleden</h1>
                 </div>
+
                 <div id="logo" class="span1">
-                    <img src="images/Email-hallmark.jpg" alt="hallmark moon with arrow" width="55px" height="55px">
+                    <img src="images/Email-hallmark.jpg" alt="hallmark moon with arrow">
                 </div>
             </div>
         </header>
     </div>
 
-    <!--wrapper-->
-<!--navbar-->
-<section id="nav">
-    <div class="bg-nav-wrapper">
 
-    </div>   
-        <div class="wrapper">
-            <div class="span3">
-                <ul class="clearfix-wrapper">
-                    <li id="Jewellery" class="dropdown">Jewellery</li>
-                        <!--dropdown w second list rings necklace brooch etc img-->                    
-                    <li id="Objects" class="dropdown">Objects</li>
-                        <!--dropdown imgs-->  
-                    <li id="Ceramics" class="dropdown"> Ceramics</li>
-                        <!--dropdown w second list sculptural functional w third list of type-->  
-                    <li id="Stockists" class="dropdown">Stockists</li>
-                        <!--dropdown href to stores-->  
-                    <li id="About" class="dropdown">About</li>
-                        <!--dropdown blurb include socials-->  
-                </ul>
+<!--navbar-->
+    <section id="nav">
+        <div class="bg-nav-wrapper">   
+            <div class="wrapper">
+                <div class="span3">
+                    <ul class="clearfix-wrapper">
+                        <li id="Jewellery" class="dropdown">Jewellery</li>
+                            <!--dropdown w second list rings necklace brooch etc img-->                    
+                        <li id="Objects" class="dropdown">Objects</li>
+                            <!--dropdown imgs-->  
+                        <li id="Ceramics" class="dropdown">Clay Art</li>
+                            <!--dropdown w second list sculptural functional w third list of type-->  
+                        <li id="Stockists" class="dropdown">Stockists</li>
+                            <!--dropdown href to stores-->  
+                        <li id="About" class="dropdown">About</li>
+                            <!--dropdown blurb include socials-->  
+                    </ul>
+                </div>
+            </div>
+        </div> 
+    </section>
+   
+<!--main-->
+    <div class="wrapper">
+   
+<!--grid container-->
+        <div class="photogrid-container">
+            <div class="wrapper">
+                <div class="photogrid">
+                    <div class="flex-container-1">
+                        <img id="corona-rings" src="images/Corona-I_V.jpg" alt="five rings silver sapphire garnets">
+                        <img id="praying-for-rain" src="images/praying-for-rain.jpg" alt="earrings silver and baroque pearls">
+                        <img id="more-rain" src="images/more-rain.jpg" alt="long silver pearl earrings">
+                        <img id="claw" src="images/claw_3.jpg" alt="silver crows claw ring with herkimer diamond">
+                        <img id="asteroid" src="images/Asteroid-Earrings.jpg" alt="statement earrings ovate drop">
+                    </div> 
+                </div>
             </div>
         </div>
-    </div> 
-</section>
-    <!--wrapper-->
-<!--main-->
-<div class="photogrid-container">
-    <div class="wrapper">
-        <div id="photogrid">
-            <div class="flex-container">
-                <img id="corona-rings" src="images/Corona-I_V.jpg" alt="five rings silver sapphire garnets">
-                <img id="praying-for-rain" src="images/praying-for-rain.jpg" alt="earrings silver and baroque pearls">
-                <img id="more-rain" src="images/more-rain.jpg">
-                <img id="claw" src="images/claw_3.jpg" alt="silver crows claw ring with herkimer diamond">
-                <img id="asteroid" src="images/Asteroid-Earrings.png" alt="statement earrings ovate drop">
+
+        <div class="photogrid-2-container">
+            <div class="wrapper">
+                <div class="photogrid">
+                    <div class="flex-container-2">
+                        <img id="good-day-full" src="images/A-good-day-a-bad-day-days-in-between_2020.jpeg" alt="collection of black vessels with wire crochet rims">
+                        <img id="maquettes" src="images/maquettes_silversmithing_2020.jpg" alt="three clay vessels with yarn and wire crochet">
+                        <img id="agd-crop" src="images/A-good-day-a-bad-day-days-in-between_CROP.jpg" alt="copper vessel with gold foil inlay and gold wire crochet clay vessels with copper wire crochet">
+                    </div>
+                </div>
             </div>
-           
+        </div>
+
+        <div class="photogrid-3-container">
+            <div class="wrapper">
+                <div class="photogrid">
+                    <div class="flex-container-3">
+                        <img id="ceramics-1" src="images/placeholder-1-louis-wain.jpg" alt="louis wain three cats placeholder">
+                        <img id="ceramics-2" src="images/placeholder-2-Louis-Wain.jpg" alt="louis wain three cats placeholder">
+                        <img id="ceramics-3" src="images/placeholder-3-louis-wain.jpg" alt="louis wain three cats placeholder">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-</div>
-
-    <!--wrapper-->  
-<!--grid container-->
-
     <!--wrapper-->
 <!--footer-->
+    <div class="footer-wrapper">
+        <div class="wrapper">
+            <footer id="footer">
+            
+            </footer>
+        </div>
+    </div>
 
     
 </body>
