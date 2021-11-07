@@ -6,12 +6,24 @@ MEDIA QUERIESSSSS!!!! DUUUHHH!!!!
 
 Add divs to footer
     social links in footer
+
 place logo behind h1
+
 font colour in search box
+
 something to replace logo at right of header
     fa envelope?
+
 img hover enlarge - modals??
+
 dropdowns in nav
+
 add fa icons
     header and footer
-    
+    aria-hidden 
+
+accessibility in search fields
+
+links in mobile list items
+
+
