@@ -331,7 +331,7 @@ a {
     overflow: hidden;
 }
 
-.modal label {
+.modal .modal-1 {
     cursor: pointer;
     margin-bottom: 0;
 }
