@@ -77,8 +77,8 @@ ul li {
 
 
 .clearfix::after, .clearfix::before, .below::after, .below::before {
-    /*CHECK THIS WITH KRUTI*/
-    content: "\0020";
+    /*CHECK THIS WITH KRUTI - */
+    content: "";
     display: block;
     height: 0;
     visibility: hidden;
