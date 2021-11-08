@@ -46,6 +46,44 @@ input[type=text]:focus {
     outline: none;
 }
 
+footer, header,  menu, nav, section {
+    display: block;
+}
+
+ol.unstyled, ul.unstyled {
+    margin: 0;
+    list-style: none outside none;
+}
+
+img {max-width: 100%;}
+
+ul, ol {
+    margin: 0 0 20px 20px;
+    padding: 0;
+}
+
+ul {
+    list-style: none; 
+}
+
+li {
+    text-align:center;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+
+
+.clearfix::after, .clearfix::before, .below::after, .below::before {
+    /*CHECK THIS WITH KRUTI*/
+    content: "\0020";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 /*FLEXBOXES*/
 
 .flex-container-1, .flex-container-2, .flex-container-3 {
@@ -68,20 +106,7 @@ input[type=text]:focus {
     }
 
 
-img {max-width: 100%;}
 
-ul, ol {
-    margin: 0 0 20px 20px;
-    padding: 0;
-}
-
-ul {
-    list-style: disc outside none; 
-}
-
-li {
-    text-align:center;
-}
   
 /*PAGE CONTENT*/
 
@@ -91,7 +116,6 @@ li {
     width: 996px;
     margin: 0 auto;
     padding: 0;
-    overflow: auto;
 }
 
 header.primary {
@@ -101,27 +125,32 @@ header.primary {
     z-index: 1000;
     }
 
-header.primary #tag {
+header.primary #line {
     text-align: center;
+    margin-top: 35px;
     color: #d45333;
     text-transform: uppercase;
     position: relative;
     left: 10px; 
 }
 
-ul#top{
-    text-align: center;
-    margin-top: 35px;
-    color: #d45333;
-    text-transform: uppercase;
-    position: relative;
-    left: 10px;
+header.primary #brand {
+    max-width: 350px;
+    height: 28px;
+    display: block;
+    margin: 43px auto;
+    margin-bottom: 0;
 }
 
 .span1 {
     width: 219px;
 }
 
+.search-field {
+    list-style-type: none;
+}
+
+/*check if this is needed*/
 li.search-field{
     float: left;
     height: 24px;
@@ -190,21 +219,19 @@ h1 {
     letter-spacing: 2px!important;
 }
 
-header.primary #logo {
+header.primary .header-logo {
     height: 75px;
     text-align: center;
     margin-top: 14px;
 }
 
+
 /*NAVBAR*/
-    
-#nav {
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000; /*this stops navbar cutting through filtered images*/
+  /*NEED THIS??*/
+.index-wrapper #nav {
+    margin-bottom: 0!important;
 }
+    
 #nav {
     min-width: 996px;
     height: 50px;
@@ -212,12 +239,36 @@ header.primary #logo {
     letter-spacing: 2px;
     background-color: #924c1b;
     color: rgba(248, 237, 223, 0.993);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /*this stops navbar cutting through filtered images*/
 }
 
-.bg-nav-wrapper::before {
+.below {
+    margin: 0 0 30px 0;
+}
+
+.under {
+    margin-bottom: 30px!important;
+}
+/*NEED THIS?? - poss shopify element*/
+.clearfix, .below {
+    zoom: 1;
+}
+
+.no-responsive-wrapper {
+    width: 996px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.no-responsive-wrapper::before {
     display: block;
     height: 20px;  
 }
+
 
 .span3 {
     width: 966px;
@@ -232,18 +283,18 @@ header.primary #logo {
     padding-top: 15px; 
 }
 
-ul.clearfix-wrapper {
-    margin: 0;
-    list-style: none outside none;
+nav>ul {
+    text-align: center;
 }
 
-#nav li {
-    width: 130px; 
-}
-
-#nav ul li {
+nav>ul>li {
     float: none!important;
     display: inline-block!important;
+    margin-bottom: 0;
+}
+
+nav li {
+    width: 130px; 
 }
 
 .photogrid {
@@ -410,153 +461,146 @@ a {
 
 @media only screen and (max-width: 690px) {
     body {
-        min-width: 90%;
-        width: 90%;
-        padding: 0 5%;
+        max-width: 90%;
     }
 }
-
 @media only screen and (max-width: 690px) {
     .mobile-element {
         display: block;
     }
 }
 
-@media only screen and (max-width: 667px) {
-    .mobile-element .home-list {
-        display: none;
+@media only screen and (max-width: 690px) {
+    .mobile-bar {
+        padding-top: 75px!important;
     }
 }
 
 @media only screen and (max-width: 690px) {
-    h1 {
-        font-size: 20%;
+    .mobile-bar {
+    width: 100%;    
+    border-bottom: #fff 1px solid;
     }
 }
 
-@media only screen and (max-width: 690px) {
-    #nav > ul > li.dropdown > .dropdown {
-        min-width: 996px
-    }
-}
-
-@media only screen and (max-width: 690px) {
-    #footer #social-links .mobile-footer #social-links-footer a {
-        margin: 0 5px;
-    }
-}
-
-@media only screen and (max-width: 690px) {
-    .search-field {
-        width: 60%!important;
-        height: 35px!important;
-        margin-left: 53px;
-        font-size: 16px!important;
-        line-height: 18px!important;
+@media only screen and (max-width: 690px){
+    .mobile-bar {
+    overflow: auto;
+    background-color: #924c1b;
     }
 }
 
 @media only screen and (max-width: 690px) {
     .mobile-bar .mobile-nav-section:first-of-type {
-        padding-left: 20px;
+    padding-left: 20px;
     }
 }
 
 @media only screen and (max-width: 690px) {
     .mobile-bar .mobile-nav-section {
-        display: table-cell;
-        vertical-align: middle;
-        width: 33%;
+    display: table-cell;
+    vertical-align: middle;
+    width: 33%;
     }
 }
+
+@media only screen and (max-width: 690px) {
+    .mobile-bar .mobile-nav-section:last-of-type {
+    padding-right: 20px;
+    }
+}
+
 
 @media only screen and (max-width: 690px) {
     .modal .modal-fade-screen {
-        top: 75px;
+    top: 75px;
     }
 }
 
 @media only screen and (max-width: 690px) {
-    .menu-list {
-        display: block;
+    .mobile-element #logo {
+    display: none;
     }
 }
 
 @media only screen and (max-width: 690px) {
-    .menu-list .list-brand {
-        width: 110px!important;
-        height: auto!important;
-        margin: 17px auto;
-        float: none!important;
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 690px) {
-    .menu-list ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 40px 0 0 0;
-    }
-}
-
-@media only screen and (max-width: 690px) {
-    .menu-list ul li {
-        text-align: center;
-        margin: 18px 0;
-    }
-}
-
-@media only screen and (max-width: 667px) {
-    .menu-list ul li.search-field {
-        padding-left: 0!important;
-    }
-}
-
-@media only screen and (max-width: 690px) {
-    .menu-list ul li.search-field .search .search_box {
-        width: 60%;
-        height: 28px;
-        color: #333!important;
-        border-radius: 1px;
-        background-color: #924c1b!important;
-        font-size: 18px!important;
-        text-transform: uppercase!important;
-        border-bottom: #000 1px solid;
+    .mobile-element #logo img {
+    display: block;
+    margin: 20px auto 0 auto;
+    max-width: 150px;
     }
 }
 
 @media only screen and (max-width: 690px) {
     .index-wrapper .mobile-element .home-list {
-        margin-top: 69px;
-        display: block;
+    margin-top: 69px;
+    display: block;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .mobile-element .home-list {
+    display: none;
     }
 }
 
 @media only screen and (max-width: 690px) {
     .index-wrapper .mobile-element .home-list img {
-        width: 100%;
-        max-width: 340px;
-        display: block;
-        margin: 0 auto;
+    width: 100%;
+    max-width: 340px;
+    display: block;
+    margin: 0 auto;
     }
 }
 
 @media only screen and (max-width: 690px) {
-    .photogrid-container, .photogrid-2-container, .photogrid-3-container, .footer-wrapper, .primary, nav.main {
-        display: none!important;
+    .home-list img {
+    margin-top: 180px!important;
     }
 }
 
 @media only screen and (max-width: 690px) {
-    .bg-nav-wrapper {
-        display: none;
+    .invert-wrap {
+    padding-top: 75px!important;
     }
 }
 
 @media only screen and (max-width: 690px) {
-    #nav, .wrapper, footer {
-        width: 100%!important;
-        margin: 0;
+    #nav, .logl, .menu-wrapper, .no-responsive-wrapper, .span3, .span2, .toolbar, .wrapper, footer {
+    width: 100%!important;
+    margin: 0;
+    }   
+}
+
+@media only screen and (max-width: 690px) {
+    #nav, .footer-wrapper {
+    width: 100%!important;
+    min-width: 300px!important;
     }
 }
+
+@media only screen and (max-width: 690px) {
+    .about-buttons, .photogrid-container, .footer-wrapper, .pagination-desktop .pagination, .primary, .second-footer, nav.main {
+    display: none!important;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .invert-wrap {
+    padding-top: 75px!important;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .index-wrapper .below {
+    display: none;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .invert-wrap {
+    padding-top: 75px!important;
+    }
+}
+
+/*delete below here*/
