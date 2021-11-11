@@ -1,0 +1,25 @@
+My learning observations from this assignment:
+
+    > Don't jump in before reading the assignment completely
+
+    > The readme doc has the information!
+
+    > Get the rubric for the assignment to keep me on track
+
+    > Print out rubric and assignment to checklist each deliverable
+
+    > STICK TO THE CHECKLIST
+        - research only what is needed for the assignment
+        - avoid going down rabbit-holes on unnecessary elements which is time that should be spent on deliverables
+        - avoid sunk-cost mentalility; if intuition says to go simpler, listen! Even if it means starting again
+
+Assignment observations:
+
+    > MOBILE-FIRST DESIGN!!! (totally forgot about this in the excitement of building my first thing)
+
+    > Full-screen first design meant: 
+         - I'd created so much content, there was too much content to redesign in the time allocated before submission
+         - it was really difficult to find all the breakpoints needed to make it mobile friendly (def did not achieve this)
+         - some design functionality I was after may actually rely on JavaScript to function in the way intended?? Esp modals 
+
+!!! Stick to the Keep It Simple Stupid design / build model !!!
